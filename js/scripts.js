@@ -14,8 +14,7 @@ var pingPong = function(num) {
           arr.unshift(num);
         };
       };
-      console.log(arr);
-      return arr
+      return arr;
     };
 };
 
@@ -23,9 +22,10 @@ $(document).ready(function() {
   $("#answerForm").submit(function(event) {
     var num = $("#numberInput").val();
     var result = pingPong(num)
-    for (var i = 0; i <= num; i++) {
-      $("#listBox").append(result);
-    }
+    $(".answer-box").show();
+    
+    $(".answer").text(result);
+
 
 
 
