@@ -19,7 +19,7 @@ $(document).ready(function() {
   $("#answerForm").submit(function(event) {
     var num = $("#numberInput").val();
     var result = pingPong(num)
-    $("#answerList").show();
+    $("#answerList").show().text(result);
 
     (event).preventDefault();
   });
