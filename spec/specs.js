@@ -8,7 +8,7 @@ describe("pingPong", function() {
   });
 
   it("checks to see if a number is divisible by just 5", function() {
-    expect(pingPong(5)).to.equal("pong");
+    expect(pingPong(5)).to.eql([ 1, 2, 'ping', 4, 'pong' ]);
   });
 
 
