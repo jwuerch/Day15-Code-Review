@@ -1,7 +1,7 @@
 var pingPong = function(num) {
     var arr = [];
-    if (!num.toString().match(/^[0-9]*$|^\s+/gmi) || (num === 0) ) {
-      return "Please enter an integer greater than 0.";
+    if (!num.toString().match(/^[0-9]*$|^\s+/gmi)) {
+      return("Please enter an integer.");
     } else {
       for (num; num > 0; num--) {
         if (num % 15 === 0) {
@@ -21,10 +21,23 @@ var pingPong = function(num) {
 $(document).ready(function() {
   $("#answerForm").submit(function(event) {
     var num = $("#numberInput").val();
-    var result = pingPong(num)
+    var result = pingPong(num);
     $(".answer-box").show();
-    
-    $(".answer").text(result);
+    for (var i =0; i < result.length; i++) {
+      eval("var arr" + i + "= new Array();")
+      eval("arr" + i + ".push(result[i])");
+      console.log(eval("arr" + i))
+    };
+
+
+    console.log(result);
+
+
+
+
+
+
+
 
 
 

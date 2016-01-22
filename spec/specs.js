@@ -1,6 +1,6 @@
 describe("pingPong", function() {
   it("detects if the input is an integer for all characters in a string", function() {
-    expect(pingPong(0)).to.equal("Please enter an integer greater than 0.");
+    expect(pingPong("hello")).to.equal("Please enter an integer.");
   });
 
   it("returns numbers up to specified maximum in an array", function() {
