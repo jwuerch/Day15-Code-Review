@@ -3,7 +3,7 @@ describe("pingPong", function() {
     expect(pingPong("hello")).to.equal("Please enter an integer.");
   });
 
-  it("returns numbers up to specified maximum in an array", function() {
+  it("returns numbers up to specified maximum in an array if not divisible by 3 or 5", function() {
     expect(pingPong(2)).to.eql([1, 2]);
   });
 
