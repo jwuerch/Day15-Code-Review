@@ -1,16 +1,12 @@
 var pingPong = function(num) {
-  if (num.match(/[0-9]*$/gm)) {
+  console.log(num);
+
+  if (!num.toString().match(/^[0-9]*$|^\s+/gmi)) {
     return false
   } else {
-    if (num % 15){
+    if (num % 15 === 0) {
 
-    } else if (num % 5) {
-
-    } else if (num % 3) {
-
-    } else {
-
+      return "pingpong"
     }
   }
-
-};
+}
