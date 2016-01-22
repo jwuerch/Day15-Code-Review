@@ -1,10 +1,23 @@
-header {
+.header {
+  background-color:yellow;
   text-align:center;
-  background-color: #e5e500;
-  margin-top:0;
-  padding-bottom:20px;
-};
+  padding:0;
+}
 
-h1 {
-  margin-top:0;
+.container {
+  padding:0;
+}
+
+.row {
+  padding:0;
+}
+
+.sidebar {
+  height:500px;
+  background-color:green;
+}
+
+.content {
+  height:500px;
+  background-color:gray;
 }
