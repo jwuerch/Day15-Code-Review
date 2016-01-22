@@ -5,16 +5,17 @@ var pingPong = function(num) {
     } else {
       for (num; num > 0; num--) {
         if (num % 15 === 0) {
-          arr.push("pingpong");
+          arr.unshift("pingpong");
         } else if (num % 5 === 0) {
-          arr.push("pong");
+          arr.unshift("pong");
         } else if (num % 3 === 0) {
-          arr.push("ping");
+          arr.unshift("ping");
         } else {
-          arr.push(num);
+          arr.unshift(num);
         };
       };
-      return arr = arr.reverse();
+      console.log(arr);
+      return arr
     };
 };
 
