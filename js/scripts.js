@@ -1,7 +1,6 @@
 var pingPong = function(num) {
-  if (!num.toString().match(/^[0-9]*$|^\s+/gmi)) {
-    console.log(num)
-    return false;
+  if (!num.toString().match(/^[0-9]*$|^\s+/gmi) ) {
+    return "Please enter an integer.";
   } else {
     if (num % 15 === 0) {
       return "pingpong";
@@ -19,7 +18,9 @@ $(document).ready(function() {
   $("#answerForm").submit(function(event) {
     var num = $("#numberInput").val();
     var result = pingPong(num)
-    $("#answerList").show().text(result);
+    $("#answerList").show()
+
+    .text(result);
 
     (event).preventDefault();
   });

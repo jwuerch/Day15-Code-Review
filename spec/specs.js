@@ -1,6 +1,6 @@
 describe("pingPong", function() {
   it("detects if the input is an integer for all characters in a string", function() {
-    expect(pingPong(1.2)).to.equal(false);
+    expect(pingPong(1.2)).to.equal("Please enter an integer.");
   });
 
   it("checks to see if a number is divisible by both 5 and 3", function() {
