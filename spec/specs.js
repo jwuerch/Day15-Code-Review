@@ -10,4 +10,8 @@ describe("pingPong", function() {
   it("checks to see if a number is divisible by just 5", function() {
     expect(pingPong(5)).to.equal("pong");
   });
+
+  it("checks to see if a number is divisible by just 3", function() {
+    expect(pingPong(3)).to.equal("ping");
+  });
 });
