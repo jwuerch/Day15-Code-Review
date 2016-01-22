@@ -1,6 +1,6 @@
 var pingPong = function(num) {
     var arr = [];
-    if (!num.toString().match(/^[0-9]*$|^\s+/gmi)) {
+    if (!num.toString().match(/^[0-9]*$|^\s+/gmi) || num.toString() === "0") {
       return("Please enter an integer.");
     } else {
       for (num; num > 0; num--) {
@@ -22,16 +22,26 @@ $(document).ready(function() {
   $("#answerForm").submit(function(event) {
     var num = $("#numberInput").val();
     var result = pingPong(num);
-    $(".answer-box").show();
-    for (var i =0; i < result.length; i++) {
-      eval("var arr" + i + "= new Array();")
-      eval("arr" + i + ".push(result[i])");
-      console.log(eval("arr" + i))
-    };
+    var numberList = document.getElementById("answerList");
 
+    $("#answerList").empty();
 
-    console.log(result);
+    if (result !== "Please enter an integer.") {
+      for (i = 0; i < result.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.innerHTML = result[i];
+        numberList.appendChild(listItem);
+      }
+    } else {
+      $("#answerList").text(result);
+    }
 
+    // for (var i =0; i < result.length; i++) {
+    //   eval("var arr" + i + "= new Array();")
+    //   eval("arr" + i + ".push(result[i])");
+    //
+    //   console.log(eval("arr" + i))
+    // };
 
 
 
