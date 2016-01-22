@@ -14,3 +14,13 @@ var pingPong = function(num) {
     };
   };
 };
+
+$(document).ready(function() {
+  $("#answerForm").submit(function(event) {
+    var num = $("#numberInput").val();
+    var result = pingPong(num)
+    $("#answerList").show();
+
+    (event).preventDefault();
+  });
+});
