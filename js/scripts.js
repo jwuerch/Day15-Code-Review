@@ -1,7 +1,10 @@
 var pingPong = function(num) {
     var arr = []
+
+
     if (!num.toString().match(/^[0-9]*$|^\s+/gmi) || (num === 0) ) {
       return "Please enter an integer.";
+
     } else {
       for (num; num > 0; num--) {
         if (num % 15 === 0) {
@@ -14,7 +17,7 @@ var pingPong = function(num) {
           arr.push(num);
         };
       };
-      console.log(arr.reverse());
+      return arr = arr.reverse();
     };
 };
 
