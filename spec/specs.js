@@ -16,6 +16,6 @@ describe("pingPong", function() {
   });
 
   it("returns number if not meeting any of the previous spec conditions, not divisible by 5 or 3", function() {
-    expect(pingPong(4)).to.equal(4);
+    expect(pingPong(16)).to.equal(16);
   });
 });

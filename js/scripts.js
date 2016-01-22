@@ -10,6 +10,8 @@ var pingPong = function(num) {
       return "pong";
     } else if (num % 3 === 0) {
       return "ping";
-    };
+    } else {
+      return num
+    }
   };
 };
