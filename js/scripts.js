@@ -1,10 +1,7 @@
 var pingPong = function(num) {
-    var arr = []
-
-
+    var arr = [];
     if (!num.toString().match(/^[0-9]*$|^\s+/gmi) || (num === 0) ) {
       return "Please enter an integer greater than 0.";
-
     } else {
       for (num; num > 0; num--) {
         if (num % 15 === 0) {
