@@ -1,10 +1,8 @@
 var pingPong = function(num) {
-  if (num = (/^[0-9]*$/gmi)) {
-    console.log(false)
+  if (num.match(/[0-9]*$/gm)) {
     return false
   } else {
-    console.log( true)
-
+    return false
   }
 
 };
