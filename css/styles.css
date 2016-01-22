@@ -62,5 +62,12 @@ body {
 }
 
 .sidebarImg {
-  max-width:300px;
+  max-width:180px;
+}
+
+@media screen and (max-width:767px) {
+  .sidebar {
+    height:500px;
+    max-height:500px;
+  }
 }
