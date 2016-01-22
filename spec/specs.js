@@ -14,4 +14,8 @@ describe("pingPong", function() {
   it("checks to see if a number is divisible by just 3", function() {
     expect(pingPong(3)).to.equal("ping");
   });
+
+  it("returns number if not meeting any of the previous spec conditions, not divisible by 5 or 3", function() {
+    expect(pingPong(4)).to.equal(4);
+  });
 });
