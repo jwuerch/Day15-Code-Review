@@ -22,37 +22,16 @@ $(document).ready(function() {
   $("#answerForm").submit(function(event) {
     var num = $("#numberInput").val();
     var result = pingPong(num);
-    var numberList = document.getElementById("answerList");
-
     $("#answerList").empty();
-
     if (result !== "Please enter an integer.") {
       for (i = 0; i < result.length; i++) {
         var listItem = document.createElement("li");
         listItem.innerHTML = result[i];
-        numberList.appendChild(listItem);
-      }
+        document.getElementById("answerList").appendChild(listItem);
+      };
     } else {
       $("#answerList").text(result);
-    }
-
-    // for (var i =0; i < result.length; i++) {
-    //   eval("var arr" + i + "= new Array();")
-    //   eval("arr" + i + ".push(result[i])");
-    //
-    //   console.log(eval("arr" + i))
-    // };
-
-
-
-
-
-
-
-
-
-
-
+    };
     (event).preventDefault();
   });
 });

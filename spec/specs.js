@@ -4,7 +4,7 @@ describe("pingPong", function() {
   });
 
   it("returns numbers up to specified maximum in an array", function() {
-    expect(pingPong(1)).to.eql([1]);
+    expect(pingPong(2)).to.eql([1, 2]);
   });
 
   it("checks to see if a number is divisible by just 3", function() {
