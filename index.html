@@ -30,6 +30,8 @@
         </div>
       </div>
       <div class="row">
+
+        <!-- Sidebar -->
         <div class="col-xs-3 sidebar">
           <div class="widget">
             <h3>About Ping Pong</h3>
@@ -44,20 +46,33 @@
           </div>
           <div class="widget">
             <h4>Level 2 Test For:</h4>
-            <p>Test Out of Intro to Programming</p>
+            <p><em>Test Out of Intro to Programming</em></p>
           </div>
         </div>
 
+        <!-- Content -->
         <div class="col-xs-9 content">
           <h2>Let's Play!</h2>
           <h4 class="h4Content">Rules:</h4>
-          <p>The Ping Pong Game will count up to your number from 1 with the following exceptions:</p>
+          <p>The <strong>Ping Pong Game</strong> will count up to your number from 1 with the following exceptions:</p>
           <ol>
             <li>The number you enter must be an integer</li>
             <li>Numbers divisible by 3 become 'ping'</li>
             <li>Numbers divisible by 5 become 'pong'</li>
             <li>Numbers divisible by both 3 and 5 become 'pingpong'</li>
           </ol>
+          <form class="form-inline">
+            <div class="form-group">
+              <label id="numberLabel" for="numberInput">Enter your number here:</label>
+              <input type="text" class="form-control" id="numberInput" placeholder="" required>
+            </div>
+            <button class="btn btn-default">Play Ping Pong!</button>
+          </div>
+
+          <div class="answer-box">
+            
+          </div>
+
         </div>
       </div>
     </div>
