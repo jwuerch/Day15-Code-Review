@@ -1,6 +1,4 @@
 var pingPong = function(num) {
-  console.log(num);
-
   if (!num.toString().match(/^[0-9]*$|^\s+/gmi)) {
     return false;
   } else {
@@ -11,7 +9,7 @@ var pingPong = function(num) {
     } else if (num % 3 === 0) {
       return "ping";
     } else {
-      return num
-    }
+      return num;
+    };
   };
 };
