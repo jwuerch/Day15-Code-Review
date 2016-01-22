@@ -16,6 +16,11 @@ h1 {
   font-size:72px;
 }
 
+.widget {
+
+  padding:5px;
+  margin-top:10px;
+}
 
 
 .sidebar {
@@ -29,4 +34,8 @@ h1 {
 
 body {
   background-color:#E6E6E6;
+}
+
+h4 {
+  color: #F4DEB5;
 }
