@@ -1,23 +1,32 @@
 .header {
-  background-color:yellow;
+  background-color:#F4DEB5;
   text-align:center;
   padding:0;
+  padding-top:40px;
+  padding-bottom:60px;
+  margin-bottom:40px;
 }
 
 .container {
   padding:0;
+  background: #FCFCFC;
 }
 
-.row {
-  padding:0;
+h1 {
+  font-size:72px;
 }
+
+
 
 .sidebar {
-  height:500px;
-  background-color:green;
+  height:1000px;
+  background-color:#90BB90;
 }
 
 .content {
   height:500px;
-  background-color:gray;
+}
+
+body {
+  background-color:#E6E6E6;
 }
