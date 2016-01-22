@@ -1,5 +1,6 @@
 var pingPong = function(num) {
   if (!num.toString().match(/^[0-9]*$|^\s+/gmi)) {
+    console.log(num)
     return false;
   } else {
     if (num % 15 === 0) {
