@@ -3,7 +3,7 @@ describe("pingPong", function() {
     expect(pingPong(1.2)).to.equal("Please enter an integer.");
   });
 
-  it("returns number if not meeting any of the previous spec conditions, not divisible by 5 or 3", function() {
+  it("returns numbers up to specified maximum in an array", function() {
     expect(pingPong(1)).to.eql([1]);
   });
 
@@ -16,7 +16,7 @@ describe("pingPong", function() {
   });
 
   it("checks to see if a number is divisible by both 5 and 3", function() {
-    expect(pingPong(15)).to.equal([1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14,"pingpong"]);
+    expect(pingPong(15)).to.eql([1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14,"pingpong"]);
   });
 
 
