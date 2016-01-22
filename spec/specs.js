@@ -6,4 +6,8 @@ describe("pingPong", function() {
   it("checks to see if a number is divisible by both 5 and 3", function() {
     expect(pingPong(15)).to.equal("pingpong");
   });
+
+  it("checks to see if a number is divisible by just 5", function() {
+    expect(pingPong(5)).to.equal("pong");
+  });
 });
