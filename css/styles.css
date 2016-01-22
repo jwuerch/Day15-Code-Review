@@ -16,6 +16,14 @@ h1 {
   font-size:72px;
 }
 
+h2 {
+  padding-bottom:10px;
+}
+
+h4 {
+  color: #F4DEB5;
+}
+
 .widget {
 
   padding:5px;
@@ -30,7 +38,6 @@ h1 {
   margin-right:10px;
 }
 
-
 .sidebar {
   height:1000px;
   background-color:#90BB90;
@@ -38,14 +45,6 @@ h1 {
 
 body {
   background-color:#E6E6E6;
-}
-
-h4 {
-  color: #F4DEB5;
-}
-
-h2 {
-  padding-bottom:10px;
 }
 
 .content {
@@ -56,4 +55,10 @@ h2 {
 
 .h4Content {
   color:#000;
+}
+
+.answer-box {
+  height:500px;
+  border:1px solid #000;
+  padding-top:15px;
 }
