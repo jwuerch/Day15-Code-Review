@@ -3,7 +3,7 @@ var pingPong = function(num) {
 
 
     if (!num.toString().match(/^[0-9]*$|^\s+/gmi) || (num === 0) ) {
-      return "Please enter an integer.";
+      return "Please enter an integer greater than 0.";
 
     } else {
       for (num; num > 0; num--) {

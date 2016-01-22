@@ -1,6 +1,6 @@
 describe("pingPong", function() {
   it("detects if the input is an integer for all characters in a string", function() {
-    expect(pingPong(1.2)).to.equal("Please enter an integer.");
+    expect(pingPong(0)).to.equal("Please enter an integer greater than 0.");
   });
 
   it("returns numbers up to specified maximum in an array", function() {
@@ -18,6 +18,4 @@ describe("pingPong", function() {
   it("checks to see if a number is divisible by both 5 and 3", function() {
     expect(pingPong(15)).to.eql([1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14,"pingpong"]);
   });
-
-
 });
